@@ -1,66 +1,125 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>webpage</title>
+    <title>Simple-webpage</title>
     <style>
       * {
         margin: 0;
         padding: 0;
       }
-
       .header {
+        height: 60px;
+        background-color: white;
+      }
+      .header-1 {
         background-color: white;
         height: 60px;
       }
-      h2 {
-        display: inline;
+      .words {
+        margin-left: 9%;
+        padding-top: 20px;
+        word-spacing: 14px;
       }
       .logo {
-        height: 30px;
-        width: 30px;
-        margin: 5px 50px;
+        height: 40px;
+        margin: 10px 9%;
+      }
+      .child {
+        margin: 0% 9%;
+        background-color: orangered;
+        padding-bottom: 42%;
       }
       body {
-        background-color: rgb(255, 140, 0);
+        background-color: orange;
       }
-      .footer-bottom {
+      .footer {
         background-color: white;
+        height: 60px;
+        padding: 4px 7%;
       }
-      button {
+      .name {
+        margin: -3% 15%;
+      }
+      .button {
         background-color: blue;
+        color: white;
+        margin-top: 18px;
+        margin-left: 55%;
+        margin-right: 0px;
       }
-      h3{
-        display:inline
-        ;
-        background-color:white;
+
+      .icon {
+        height: 25px;
+        margin-top: -18px;
+        margin-left: 80%;
+      }
+      .image {
+        height: 50px;
+        margin: 0% 1%;
+      }
+      .para {
+        margin-left: 75%;
+        margin-top: -4.5%;
+      }
+      .bottom {
+        height: 60px;
+        background-color: blueviolet;
+      }
+      .line {
+        margin-left: 15%;
+        padding-top: 20px;
+        color: white;
+      }
+      .social {
+        height: 80px;
+        margin-left: 60%;
+        margin-top: -3.5%;
       }
     </style>
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="./lets code image.jpg" />
-      <h2>lets-code</h2>
-      <button>Upgrade</button>
-      <img class="logo" src="./test tube image.jpg" />
-      <img class="logo" src="./bell icon image.png" />
+      <img class="logo" src="./lets code image.jpg" alt="lets-code icon" />
+      <h2 class="name">lets-code</h2>
+      <button class="button">Upgrade</button>
     </header>
-    <header>
-      <h3>Team overview</h3>
-      <h3>Sites</h3 >
-      <h3>Builds</h3>
-      <h3>Integration</h3 >
-      <h3>Domain</h3 >
-      <h3>Members</h3 >
-      <h3>Audit log</h3 >
-      <h3>Billing<h3 >
-      <h3>Team settings</h3>
+    <header class="header-1">
+      <p class="words">
+        <b> Team overview </b>
+        Sites Builds Integration Domain Members Audit log Billing Team setting
+      </p>
     </header>
-    <footer class="footer-bottom">
-      <img src="./verisign image.png" />
-      <img src="./master card image.jpg" />
-      <img src="./safekey image.jpg" />
-      <img src="./verified by visa image.jpg" />
-      <img src="./rupay image.jpg" />
-    </footer>
+    <div class="child"></div>
+  </div>
+  <div>
+    <div class="footer">
+      <img class="image" src="./verisign image.png" alt="verisign image" />
+      <img
+        class="image"
+        src="./master card image.jpg"
+        alt="master card image"
+        width="9%"
+        height="5"
+      />
+      <img class="image" src="./safekey image.jpg" alt="safekey image" />
+      <img class="image" src="./verified by visa image.jpg" alt="visa image" />
+      <img class="image" src="./rupay image.jpg" alt="rupay image" />
+
+      <h5 class="para">
+        Copyright A@2023-www.irctc.co.in All Rights Reserved <br />
+        Designed and Hosted by CRIS <br />
+        Compatile Browsers
+      </h5>
+    </div>
+    <div class="bottom">
+      <h3 class="line">Get Connected With us on social networks</h3>
+      <div>
+        <img
+          class="social"
+          src="./social_media_logo_images-removebg-preview.png"
+          alt="social media image"
+        />
+      </div>
+    </div>
   </body>
 </html>
