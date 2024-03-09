@@ -1,8 +1,115 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>webpage</title>
-    <style></style>
+    <title>sign-up</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+      }
+      .main {
+        border: 1px solid white;
+        background-color: white;
+        margin: 0% 25%;
+        height: 70vh;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      h3 {
+        color: white;
+        margin: auto;
+        width: fit-content;
+        padding: 3% 45%;
+      }
+      .parent {
+        background-color: grey;
+        height: 70vh;
+        width: 50%;
+        background-image: url("block\ images.jpg");
+      }
+      .parent-1 {
+        background-color: white;
+        height: 70vh;
+        width: 50%;
+      }
+      .child {
+        padding: 0px 5%;
+      }
+      h2 {
+        padding: 8% 5%;
+      }
+      .button {
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+        padding: 10px 2%;
+      }
+      p {
+        text-align: center;
+      }
+      .child-1 {
+        padding: 76% 3%;
+        color: white;
+      }
+      .footer {
+        color: white;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h3>Sign up #10</h3>
+    <div class="main">
+      <div class="parent">
+        <div class="child-1">
+          <h2 class="footer">Welcome to Sign-up Form</h2>
+          <p>
+            Far far away,behind the word mountain, far from the countries
+            vokalia and consonantia, there live the blind texts.
+          </p>
+        </div>
+      </div>
+      <div class="parent-1">
+        <h2>Create an account</h2>
+        <div class="child">
+          <label>Full Name</label>
+          <input type="text" placeholder="Firs name" />
+          <br />
+          <br />
+          <label>Email Address</label>
+          <input type="text" placeholder="johndeo@email.com" />
+          <br />
+          <br />
+          <label>Phone no.</label>
+          <input type="number" placeholder="*01" />
+          <br />
+          <br />
+          <label>Password</label>
+          <input type="password" placeholder="password" />
+          <br />
+          <br />
+          <label>Website</label>
+          <input type="text" placeholder="website" />
+          <br />
+          <br />
+          <input type="checkbox" />
+          I Agree All Statemens In Terms of Service
+          <br />
+          <br />
+          <button class="button" type="submit">Create an account</button>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <p>Sign up with this service</p>
+        <br />
+        <p>I'm already a member!Sign up</p>
+      </div>
+    </div>
+  </body>
 </html>
