@@ -2,38 +2,72 @@
 <html>
   <head>
     <title>login-form</title>
+    <style>
+      body {
+        background-color: rgb(246, 248, 250);
+      }
+      .main {
+        border: 2px solid rgb(216, 222, 228);
+        margin: auto;
+        width: 40%;
+        height: 80vh;
+        background-color: rgb(255, 255, 255);
+      }
+      .parent {
+        width: fit-content;
+        margin: auto;
+        padding: 7px 20%;
+        background-color: rgb(247, 237, 232);
+      }
+      h2 {
+        width: fit-content;
+        margin: auto;
+        padding: 5% 0px;
+        color: rgb(229, 158, 110);
+      }
+      .child {
+        padding: 3% 5%;
+      }
+      .button {
+        background-color: rgb(229, 158, 110);
+        color: white;
+        padding: 10px 40%;
+        border-color: 1px solid white;
+      }
+    </style>
   </head>
   <body>
-    <div>
+    <div class="main">
       <h2>Your Company</h2>
-      <div>
+      <div class="parent">
         <h3>Sign Up for Our Newsletter</h3>
         <p>
           Fill out your information below to be signed up <br />for our
           informative newsletter.
         </p>
       </div>
-      <label>First Name</label>
-      <br />
-      <input />
-      <label>Last Name</label>
-      <input />
-      <br />
-      <br />
-      <label>Email Address:</label>
-      <br />
-      <input />
-      <br />
-      <br />
-      <label>Company</label>
-      <br />
-      <input />
-      <p>
-        Add me to your mailing list<br />
-        <input type="checkbox" /> I agree to receive e-mail from your company
-        and your terms and conditions
-      </p>
-      <button>Sign Me Up</button>
+      <div class="child">
+        <label for="first-name">First Name</label>
+        <input type="text" placeholder="firstname" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" placeholder="lastname" id="last-name" />
+        <br />
+        <br />
+        <label for="email">Email Address:</label>
+        <br />
+        <input type="text" placeholder="Email" id="email" />
+        <br />
+        <br />
+        <label for="company">Company</label>
+        <br />
+        <input type="text" placeholder="company" id="company" />
+        <p>
+          Add me to your mailing list<br />
+          <input type="checkbox" /> I agree to receive e-mail from your company
+          and your terms and conditions
+        </p>
+        <button class="button" type="submit">Sign Me Up</button>
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sign-up form</title>
+    <style>
+      .main {
+        border: 1px solid black;
+        width: 20%;
+        margin: auto;
+        padding: 3px 3%;
+      }
+      h1 {
+        margin: auto;
+        width: 20%;
+      }
+      .button {
+        margin: 5px 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Basic HTML Form</h1>
+    <div class="main">
+      <form>
+        <fieldset>
+          <legend>Name</legend>
+          <label for="first-name">first name</label>
+          <br />
+          <input
+            type="text"
+            id="first-name"
+            placeholder="enter first name"
+            maxlength="10"
+            required
+          />
+          <br />
+          <br />
+          <label for="last-name">last name</label>
+          <br />
+          <input
+            type="text"
+            id="last-name"
+            placeholder="enter last name"
+            maxlength="10"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <legend>other question</legend>
+          <label>choose a drink:</label>
+          <br />
+          <input type="radio" />
+          <label>coffee</label>
+          <br />
+          <input type="radio" />
+          <label>tea</label>
+          <br />
+          <input type="radio" />
+          <label>hot chocolate</label>
+          <br />
+          <p>What ice cream do you like?</p>
+          <input type="checkbox" />
+          <label>Chocolate</label>
+          <br />
+          <input type="checkbox" />
+          <label>Chocolate Pudding</label>
+          <br />
+          <input type="checkbox" />
+          <label>Chocolate Peanut Butter</label>
+          <br />
+          <input type="checkbox" />
+          <label>Vanilla</label>
+          <br />
+          <input type="checkbox" />
+          <label>Strawberry</label>
+          <br />
+
+          <label>Select a school:</label>
+          <br />
+          <select name="scool">
+            <option>Harward</option>
+            <option>TSSMSSS</option>
+          </select>
+          <br />
+          <label>Please provide comment</label>
+          <br />
+
+          <textarea rows="5" cols="30"></textarea>
+        </fieldset>
+        <button class="button" type="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
