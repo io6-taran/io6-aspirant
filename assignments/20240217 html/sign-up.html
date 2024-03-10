@@ -13,9 +13,12 @@
       .main {
         background-color: rgb(106, 90, 205);
         border: 1px solid black;
-        width: 80%;
+        width: 60%;
         height: 100vh;
-        margin: 0% 10%;
+        margin: 3% 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
       }
       h2 {
         margin: auto;
@@ -23,59 +26,144 @@
         padding: 3% 0%;
         color: rgb(106, 90, 206);
       }
+      .parent {
+        margin: 12px 3%;
+        color: white;
+        height: 80vh;
+        width: 30%;
+      }
+      .child {
+        margin: 12px 0%;
+        height: 80vh;
+        width: 100%;
+        color: white;
+      }
     </style>
   </head>
   <body>
     <h2>STUDENT REGISTRATION FORM</h2>
     <div class="main">
-      <form>
+      <div class="parent">
         <label>FIRST NAME</label>
-        <input type="text" placeholder="none" maxlength="30" />
         <br />
         <br />
         <label>LAST NAME</label>
-        <input type="text" placeholder="none" maxlength="30" />
         <br />
         <br />
         <label>DATE OF BIRTH</label>
-        <input type="calender" />
         <br />
         <br />
         <label>EMAIL ID</label>
-        <input />
         <br />
         <br />
         <label>MOBILE NUMBER</label>
-        <input />
         <br />
         <br />
-        <label>GENDER</label>Male <input type="radio" />female
-        <input type="radio" />
+        <label>GENDER</label>
         <br />
         <br />
         <label>ADDRESS</label>
-
-        <textarea rows="5" cols="30"></textarea>
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <label>CITY</label>
-        <input />
         <br />
         <br />
         <label>PIN CODE</label>
-        <input />
         <br />
         <br />
         <label>STATE</label>
-        <input />
         <br />
         <br />
         <label>COUNTRY</label>
-        <input />
         <br />
         <br />
         <label>HOBBIES</label>
-      </form>
+        <br />
+        <br />
+        <br />
+        <br />
+        <label>QUALIFICATION</label>
+        <br />
+        <br />
+        <label>COURSES APPLIED FOR</label>
+      </div>
+      <div class="child">
+        <input type="text" />
+        <label>(max 30 character a-z and A-Z)</label>
+        <br />
+        <br />
+        <input type="text" />
+        <label>(max 30 character a-z and A-Z)</label>
+        <br />
+        <br />
+        <input />
+        <br />
+        <br />
+        <input type="text" />
+        <br />
+        <br />
+        <input type="number" maxlength="10" />
+        <br />
+        <br />
+        <label>Male</label>
+        <input type="radio" />
+        <label>Female</label>
+        <input type="radio" />
+        <br />
+        <br />
+        <textarea rows="5" cols="30"></textarea>
+        <br />
+        <br />
+        <input type="number" />
+        <label>(max 30 character a-z and A-Z)</label>
+        <br />
+        <br />
+        <input type="number" />
+        <label>(6 digit number)</label>
+        <br />
+        <br />
+        <input type="text" />
+        <label>(max 30 character a-z and A-Z)</label>
+        <br />
+        <br />
+        <input type="text" />
+        <br />
+        <br />
+        <label>Drawing</label>
+        <input type="checkbox" />
+        <label>Singing</label>
+        <input type="checkbox" />
+        <label>Dancing</label>
+        <input type="checkbox" />
+        <label>Sketching</label>
+        <input type="checkbox" />
+        <br />
+        <label>other</label>
+        <input type="checkbox" />
+        <input type="text" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <label>BCA</label>
+        <input type="radio" />
+        <label>B.Com</label>
+        <input type="radio" />
+        <label>B.Sc</label>
+        <input type="radio" />
+        <label>B.A</label>
+        <input type="radio" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+        <button type="submit">Reset</button>
+      </div>
     </div>
   </body>
 </html>
