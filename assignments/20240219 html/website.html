@@ -17,12 +17,21 @@
         padding: 15px 0px;
         border: 1px solid black;
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items: center;
       }
-      p {
-        display: inline-block;
+      .jio-logo{
+        height:5px;
+        width:5px;
+      }
+      p {display: inline-block;
         color: white;
+        padding:0px 4%;
+        
+      }
+      .section-1 {
+        
+        
       }
       .header-2 {
         height: 5vh;
@@ -33,15 +42,115 @@
         margin: 0px 8%;
         padding: 10px 0px;
       }
+      li{
+        display: inline-block;
+        color:white;
+        padding:0px 2%;
+      }
+      .background{
+        border:1px solid black;
+        height:60vh;
+        width:100%;
+        background-image:url("jio-website-image.jpg");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+      }
+      .box{
+        
+        height:40vh;
+        width:30%;
+        margin:4% 7%;
+      }
+      h2{
+font-size:60px;
+
+      }
+        h6{
+          font-size:20px;
+          margin:15px 0%;
+        }
+        button{
+          background-color:blue;
+          border-radius:25px;
+          height:6vh;
+          width:25%;
+          margin: 15px 2%;
+        }
+        span{
+          
+          display:block;
+          height:10vh
+        }
+        main{
+          border:2px solid black;
+          height:60vh;
+          width:100%;
+        }
+        .child{
+          height:60vh;
+          width:80%;
+          background-color:blue;
+          border-radius:15px;
+          margin:0px 10%;
+          display:flex;
+          justify-content:space-between;
+          align-items:center;
+        }
+        .child-1{
+          height:40vh;
+          width:60%;
+          margin:  5%;
+        }
+        h3{
+          font-size:80px;
+        }
+        .child-2{
+          background-image:url("recharge-paybills-online.png");
+          background-repeat:no-repeat;
+        background-size: 100% 100%;
+        height:60vh;
+        width:40%;
+        }
+        .line{
+          font-size:70px;
+          margin:0px 20%;
+        }
+        .content{
+          border:1px solid black;
+          height:25vh;
+          width:100%;
+        }
+        .content-1{border:1px solid black;
+          height:25vh;
+          width:80%;
+          margin:0px 10%;
+          display:flex;
+          justify-content:space-between;
+          align-items:center;
+        }
+        .content-2{
+          height:25vh;
+          border:1px solid black;
+        }
+        .content-3{
+          height:25vh;
+          border:1px solid black;
+        }
+        .content-4{
+          height:25vh;
+          border:1px solid black;
+        }
+        .content-5{
+          height:25vh;
+          border:1px solid black;
+        }
     </style>
   </head>
   <body>
     <header class="header">
       <div class="parent">
         <div class="section-1">
-          <img src="./jio-logo.png" alt="jio-logo" />
-        </div>
-        <div class="section-2">
+          <img class="jio-logo" src="./jio-logo.png" alt="jio-logo" />
           <p>Mobile</p>
           <p>True5g</p>
           <p>Jiofiber</p>
@@ -51,7 +160,6 @@
           <p>Apps</p>
           <p>Support</p>
         </div>
-        <div class="section-3"></div>
         <div>
           <img src="" alt="searchbar-logo" /><img src="" alt="profile-logo" />
         </div>
@@ -59,14 +167,46 @@
     </header>
     <div class="header-2">
       <div class="text">
-        <p>Discover</p>
-        <p>Prepaid</p>
-        <p>Postpaid</p>
-        <p>International services</p>
-        <p>Get jio SIM</p>
-        <p>Recharge</p>
-        <p>Pay Bills</p>
+        <ul type="none">
+        <li>Discover</li>
+        <li>Prepaid</li>
+        <li>Postpaid</li>
+        <li>International services</li>
+        <li>Get jio SIM</li>
+        <li>Recharge</li>
+        <li>Pay Bills</p>
+        </ul>
       </div>
     </div>
+    <div class="background">
+      
+      <div class="box">
+        <h2>Get a SIM with your lucky number</h2>
+        <h6>free sim deliver with doorstep KYC</h6>
+        <button type="submit">Order new SIM</button>
+      </div>
+    </div>
+    <span></span>
+    <div class="main">
+      <div class="child">
+        <div class="child-1"><h3>Easily recharge or pay bills-online
+        </h3>
+      <button>Recharge</button>
+    <button>Pay Bils</button></div>
+        <div class="child-2"></div>
+      </div>
+    </div>
+    <span></span>
+    <h2 class="line">Here's why India prefers Jio</h2>
+    <span></span>
+    <div class="content">
+      <div class="content-1">
+        <div class="content-2"></div>
+        <div class="content-3"></div>
+        <div class="content-4"></div>
+        <div class="content-5"></div>
+      </div>
+    </div>
+    <span></span>
   </body>
 </html>
