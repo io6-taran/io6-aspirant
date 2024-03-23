@@ -3,16 +3,30 @@
   <head>
     <title>Portfolio webpage</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+      }
+      .main {
+        border: 1px solid black;
+        height: 80vh;
+        width: 80%;
+        margin: 5% 10%;
+        background-image: url("pexels-photo-20654843.webp");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
       .header {
         height: 6vh;
         width: 100%;
-        border: 1px solid black;
       }
       .head-1 {
         height: 6vh;
         width: 95%;
-        border: 1px solid black;
-        margin: 0px 2.5%;
+        margin: 1.5% 2.5%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,28 +37,107 @@
       }
       .head-3 {
         height: 6vh;
-        width: 35%;
+        width: 30%;
       }
       p {
         display: inline-block;
-        margin: 0px 1%;
+        margin: 0px 4%;
+        padding: 3% 0px;
+      }
+      .head-4 {
+        margin-right: 1%;
+      }
+      .head-5 {
+        border-radius: 25px;
+        height: 5vh;
+        width: 140%;
+        color: white;
+        background-color: red;
+      }
+      .name {
+        height: 30vh;
+        width: 50%;
+        margin: 10% 3%;
+      }
+      .name-1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+      .name-2 {
+        font-size: 50px;
+        margin: 2% 0px;
+      }
+      .name-3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+      }
+      .name-6 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .name-4 {
+        margin: 6% 0px;
+        height: 5vh;
+        width: 50%;
+        border-radius: 25px;
+        padding: 0px 2%;
+      }
+      .name-5 {
+        border-radius: 25px;
+        height: 4vh;
+        width: 20%;
+        border: 1px solid black;
+        padding-left: 2%;
+      }
+      .footer {
+        height: 5vh;
+        width: 25%;
+        margin-left: 1%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer-1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        padding: 3%;
       }
     </style>
   </head>
   <body>
-    <header class="header">
-      <div class="head-1">
-        <div class="head-2">Portfolio</div>
-        <div class="head-3">
-          <p>About Us</p>
-          <p>Service</p>
-          <p>Skills</p>
-          <p>Contact Us</p>
+    <div class="main">
+      <header class="header">
+        <div class="head-1">
+          <div class="head-2">Portfolio</div>
+          <div class="head-3">
+            <p>About Us</p>
+            <p>Service</p>
+            <p>Skills</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="head-4">
+            <button class="head-5">Subscribe</button>
+          </div>
         </div>
-        <div class="head-4">
-          <button>Subscribe</button>
+      </header>
+      <div class="name">
+        <h4 class="name-1">Hello,my name is</h4>
+        <h1 class="name-2">Taranpreet Kaur</h1>
+        <h3 class="name-3">i'am a web developer</h3>
+        <div class="name-6">
+          <input class="name-4" type="text" placeholder="Enter Your Email" />
         </div>
       </div>
-    </header>
+      <div class="footer">
+        <h4 class="footer-1">Lets Connect</h4>
+        <div class="footer-2">
+          <img src="./facebook-removebg-preview.png" height="30" width="30" />
+          <img src="./linkdin-removebg-preview.png" height="30" width="30" />
+          <img src="./twitter-removebg-preview.png" height="30" width="30" />
+          <img src="./youtube-removebg-preview.png" height="30" width="30" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
