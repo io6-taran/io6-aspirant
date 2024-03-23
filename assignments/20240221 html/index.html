@@ -6,107 +6,77 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
-      body {
-        background-color: grey;
-      }
-      .header {
-        height: 5vh;
+      .main {
+        height: 6vh;
         width: 100%;
-        background-color: white;
+        border: 1px solid black;
+      }
+      .head {
+        height: 6vh;
+        width: 80%;
+        border: 1px solid black;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 10%;
+      }
+      .head-1 {
+        height: 6vh;
+        width: 40%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
         align-items: center;
       }
-      .header-1 {
-        color: black;
-        display: flex;
-        justify-content: space-around;
-        width: 30%;
+      .head-3,
+      .head-4,
+      .head-5 {
+        margin-left: 14%;
       }
-      .header-2 {
+      .head-6 {
+        width: 15%;
+        margin-left: -20%;
       }
-      .icon {
-        height: 50px;
-        width: 30%;
-        border-radius: 30px;
+      .head-8 {
+        width: 11%;
       }
-      .header-3 {
-        background-color: blue;
-      }
-      .parent {
-        background-color: rgb(214, 86, 86);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 9px 10%;
-      }
-      .child-1 {
-        background-color: black;
-        color: white;
-        height: 100px;
-        width: 20%;
-      }
-      .child-2 {
-        background-color: white;
-      }
-      .icon {
-        height: 50px;
-        width: 5%;
-        border-radius: 100%;
-        margin: -20px 0%;
-      }
-      .child-3 {
-        background-color: white;
-        height: 50px;
-        width: 20%;
-        text-align: center;
-        word-spacing: 15px;
-      }
-      .logo {
-        height: 50px;
-        width: 5%;
-        border-radius: 100%;
-        margin: -20px 0%;
-      }
-      .content {
-        background-color: white;
+      .head-9 {
+        border-radius: 25px;
+        height: 4.5vh;
+        width: 70%;
       }
     </style>
   </head>
   <body>
-    <header class="header">
-      <div class="header-1">
-        <p>Home</p>
-        <p>Moments</p>
-        <p>Notification</p>
-        <p>Messages</p>
-      </div>
-      <div class="header-2">
-        <img src="./twitter image.jpeg" alt="twitter logo" height="23" />
-      </div>
-      <div class="header-3">
-        <button>Tweet</button>
+    <header class="main">
+      <div class="head">
+        <div class="head-1">
+          <p class="head-2">Home</p>
+          <p class="head-3">Moments</p>
+          <p class="head-4">Notification</p>
+          <p class="head-5">Messages</p>
+        </div>
+        <div class="head-6">
+          <img
+            class="head-7"
+            src="./twitter image.jpeg"
+            width="35"
+            height="35"
+          />
+        </div>
+        <div class="head-8">
+          <button class="head-9">Tweet</button>
+        </div>
       </div>
     </header>
-    <div class="parent">
-      <div class="child-1">
-        <h2>RATATOUILLE</h2>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-      <div class="child-2">
-        <img class="icon" src="./remy.jpg" alt="remy-image" height="25" />
-        <h4>Remy<br /></h4>
-        <p>@remy</p>
-      </div>
-      <div class="child-3">
-        <p>Tweets Following Followers</p>
-        <p>5049 324 809</p>
-      </div>
-    </div>
-    <div class="content">
-      <div><img class="logo" src="./remy.jpg" height="25" /></div>
-      <div><img class="logo" src="./remy.jpg" height="25" /></div>
-      <div><img class="logo" src="./remy.jpg" height="25" /></div>
     </div>
   </body>
 </html>
