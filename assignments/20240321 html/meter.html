@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>meter</title>
+    <style>
+      body {
+        background-color: rgb(59, 147, 134);
+      }
+      .main {
+        height: 10vh;
+        width: 60%;
+        margin: 22% 32%;
+      }
+      .main-1 {
+        width: 100%;
+        height: 6vh;
+        margin: 4% 0%;
+        border-radius: 25px;
+        background-color: rgb(241, 151, 85);
+      }
+      .main-2 {
+        width: 93%;
+        height: 1.5vh;
+        margin: 3% 2%;
+        border: 1px solid black;
+        border-radius: 25px;
+        background-color: rgb(59, 147, 134);
+      }
+      .main-3 {
+        width: 93%;
+        height: 1.5vh;
+        border-radius: 25px;
+
+        animation-name: progress-bar;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-direction: none;
+      }
+      @keyframes progress-bar {
+        from {
+          width: 0%;
+          background-color: white;
+        }
+        to {
+          width: 100%;
+          background-color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-1"></div>
+      <div class="main-2">
+        <div class="main-3"></div>
+      </div>
+    </div>
+  </body>
+</html>
