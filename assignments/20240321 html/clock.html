@@ -2,12 +2,76 @@
 <html>
   <head>
     <title>clock</title>
-    <style></style>
+    <style>
+      .square {
+        height: 30vh;
+        width: 14.4%;
+        border: 1px solid black;
+        margin: 10% 17%;
+      }
+      .circle {
+        height: 30vh;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: relative;
+       
+      }
+      .dot {
+        height: 1vh;
+        width: 3%;
+        border: 1px solid black;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        animation-name: rotater;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
+        animation-direction: none;
+      }
+      @keyframes rotater {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .big-line {
+        height: 12vh;
+        width: 3%;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        left: 2px;
+        top: 20%;
+      }
+
+      .small-line {
+        transform: rotate(90deg);
+        height: 8vh;
+        width: 1px;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        left:26%;
+        top:32.5%;
+      }
+    </style>
   </head>
   <body>
     <div>
-      <div>
-        <div></div>
+      <div class="square">
+        <div class="circle">
+          <div class="dot">
+            <div class="big-line"></div>
+            </div>
+          </div>
+          <div class="small-line"></div>
+        </div>
       </div>
     </div>
   </body>
