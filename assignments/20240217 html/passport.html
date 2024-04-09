@@ -5,8 +5,8 @@
     <style>
       .main {
         width: 60%;
-        height: 100vh;
-        border: 1px solid black;
+        height: 130vh;
+
         margin-left: 15%;
       }
       span {
@@ -16,7 +16,7 @@
         width: 100%;
       }
       .header-1 {
-        border: 1px solid black;
+        border: 1px solid pink;
         height: 15vh;
         width: 100%;
         text-align: center;
@@ -33,11 +33,18 @@
         align-items: center;
       }
       .header-image {
-        width: 25%;
+        width: 10%;
+        height: 14vh;
+        margin-top: -7%;
+        margin-left: 2%;
       }
       .text {
         height: 3vh;
         margin-top: 2px;
+      }
+      .holder-authentication-para {
+        border: 1px solid black;
+        margin-top: 3px;
       }
     </style>
   </head>
@@ -49,7 +56,7 @@
           Government of India,Ministry of External Affairs
         </div>
         <div class="under-header-para">
-          <img class="header-image" src="" />
+          <img class="header-image" src="./satyamev jayte logo.jpeg" />
           <p>
             Please read the passport instruction booklet carefullly before
             filling the form.Furnishing of incorrect information
@@ -131,7 +138,7 @@
         <input style="margin-left: 5%" class="text" type="text" />
         <br />
         <label>Employment type*</label>
-        <input style="margin-left: 5%" class="text" type="text" />
+        <textarea style="margin-top: 2px" rows="1" cols="60"></textarea>
         <br />
         <label
           >Is either of your parent(in case of minor)/spouse, a government
@@ -149,6 +156,41 @@
         <br />
         <label>Aadhar Number</label>
         <input class="text" style="margin-left: 10%" type="text" />
+      </div>
+      <div class="holder-authentication-para">
+        <p>
+          I,the holder of above mentioned aadhar number,hereby give my consent
+          to passport seva to obtain my aadhar number, name and fingerprint/iris
+          for authentication with UIDAI.Ihave no objection using my identity and
+          biometric information for validation with aadhar (CIDR) database only
+          for the purpose of authentication.
+        </p>
+        <label>I agree</label>
+        <input type="checkbox" />
+        <label>Yes</label>
+        <input type="checkbox" />
+        <label>No</label>
+      </div>
+      <br />
+      <span
+        >Family Details(Father/Mother/Legal Guardian details;at least one is
+        mandatoey.)*
+      </span>
+      <div>
+        <label>
+          Father's Given Name(Given Name means First Name followed by middle
+          name(if any))
+        </label>
+        <textarea rows="1" cols="100"></textarea>
+      </div>
+      <div>
+        <label> Surname </label>
+        <br />
+        <textarea rows="1" cols="100"></textarea>
+      </div>
+      <div>
+        <label> Legal Guardian's Given Name(if applicable) </label>
+        <textarea rows="1" cols="100"></textarea>
       </div>
     </div>
   </body>
