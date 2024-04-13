@@ -21,14 +21,21 @@
         align-items: center;
         margin: 0px 8%;
       }
-      .logo {
+
+      .header-input-box {
+        position: relative;
+      }
+      .search-logo {
+        position: absolute;
+        margin-left: -35%;
+        margin-top: -4%;
       }
       .input-box {
-        margin-left: -60%;
+        margin-left: -30%;
         padding-top: 5%;
         padding-bottom: 5%;
-        padding-left: 25%;
-        width: 200%;
+        padding-left: 17%;
+        width: 180%;
         font-size: 15px;
       }
       .header-download-app {
@@ -80,8 +87,65 @@
       }
       .lowest-price-section-1 {
         height: 50vh;
-        width: 50%;
+        width: 55%;
+
+        background-color: rgb(248, 248, 255);
+      }
+      .lowest-price {
+        font-size: 45px;
+        font-weight: 800;
+        margin: 10% 10%;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .delivery {
+        height: 8vh;
+        background-color: white;
+        border-radius: 8px;
+        width: 80%;
+        margin: -5% 10% 5%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .free-delivery {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .cash-delivery {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .easy-return {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .vertical-line {
         border: 1px solid black;
+        height: 35px;
+        width: 1px;
+      }
+      .button-download-the-meesho {
+        height: 6vh;
+
+        border-radius: 8px;
+        width: 55%;
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 5% 10%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(159, 32, 137);
+      }
+      .delivery-logo {
+        margin-right: 10px;
+        border: 1px solid rgb(240, 221, 237);
+        border-radius: 50%;
       }
     </style>
   </head>
@@ -99,6 +163,12 @@
             />
           </div>
           <div class="header-input-box">
+            <img
+              class="search-logo"
+              src="./search-logo-removebg-preview.png"
+              height="55"
+              width="55"
+            />
             <input
               class="input-box"
               type="text"
@@ -158,23 +228,63 @@
           <div class="download-meesho-1">
             <div class="lowest-price-section-1">
               <div class="lowest-price">
-                <p>Lowest Price Best Quality</p>
+                <p class="lowest-price-1">
+                  Lowest Price <br />Best Quality Shopping
+                </p>
               </div>
               <div class="delivery">
                 <div class="free-delivery">
-                  <div></div>
-                  <div></div>
+                  <div>
+                    <img
+                      class="delivery-logo"
+                      src="./freeDelivery_jamun.svg"
+                      width="35"
+                      height="35"
+                    />
+                  </div>
+                  <div>
+                    <p>Free <br />Delivery</p>
+                  </div>
                 </div>
+                <div class="vertical-line"></div>
                 <div class="cash-delivery">
-                  <div></div>
-                  <div></div>
+                  <div>
+                    <img
+                      class="delivery-logo"
+                      src="./cod_jamun.svg"
+                      width="35"
+                      height="35"
+                    />
+                  </div>
+                  <div>
+                    <p>Cash on<br />Delivery</p>
+                  </div>
                 </div>
+                <div class="vertical-line"></div>
                 <div class="easy-return">
-                  <div></div>
-                  <div></div>
+                  <div>
+                    <img
+                      class="delivery-logo"
+                      src="./easyReturns_jamun.svg"
+                      width="35"
+                      height="35"
+                    />
+                  </div>
+                  <div>
+                    <p>Easy<br />Returns</p>
+                  </div>
                 </div>
               </div>
-              <div class="button-download-the-meesho"></div>
+              <div class="button-download-the-meesho">
+                <div>
+                  <img
+                    src="./play-store_logo-removebg-preview.png"
+                    width="50"
+                    height="50"
+                  />
+                </div>
+                <div><p>Download the Meesho App</p></div>
+              </div>
             </div>
           </div>
           <div class="get-discount-section-2">
