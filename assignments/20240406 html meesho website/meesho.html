@@ -71,10 +71,18 @@
         width: 100%;
         height: 7vh;
       }
+      .body-container-1 {
+        height: 50vh;
+        width: 100%;
+        border: 1px solid black;
+      }
       .download-meesho {
         height: 50vh;
         width: 100%;
         border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
       .download-meesho-1 {
         height: 50vh;
@@ -146,6 +154,11 @@
         margin-right: 10px;
         border: 1px solid rgb(240, 221, 237);
         border-radius: 50%;
+      }
+      .discount-image {
+        height: 50vh;
+        width: 45%;
+        border: 2px solid black;
       }
     </style>
   </head>
@@ -223,7 +236,7 @@
         <p>Electronics</p>
       </div>
       <span></span>
-      <div>
+      <div class="body-container-1">
         <div class="download-meesho">
           <div class="download-meesho-1">
             <div class="lowest-price-section-1">
@@ -288,7 +301,7 @@
             </div>
           </div>
           <div class="get-discount-section-2">
-            <img class="discount-image" src="./" />
+            <img class="discount-image" src="./discount-image.webp" />
           </div>
         </div>
       </div>
