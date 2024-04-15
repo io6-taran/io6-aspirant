@@ -9,7 +9,6 @@
         box-sizing: border-box;
       }
       .header {
-        border: 1px solid black;
         height: 10vh;
         width: 100%;
       }
@@ -27,8 +26,8 @@
       }
       .search-logo {
         position: absolute;
-        margin-left: -35%;
-        margin-top: -4%;
+        left: -65px;
+        top: -8px;
       }
       .input-box {
         margin-left: -30%;
@@ -302,43 +301,102 @@
         margin-top: 10%;
       }
       .footer {
-        height: 50vh;
+        background-color: rgb(227, 227, 249);
+        height: 42vh;
         width: 100%;
-        border: 1px solid black;
       }
       .footer-content {
-        height: 50vh;
+        height: 42vh;
         width: 90%;
-        border: 1px solid black;
         margin: 0px 5%;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
       .footer-section-1 {
-        height: 50vh;
+        height: 30vh;
         width: 40%;
-        border: 1px solid black;
       }
       .footer-section-2 {
-        height: 50vh;
+        height: 30vh;
         width: 20%;
-        border: 1px solid black;
       }
       .footer-section-3 {
-        height: 50vh;
+        height: 30vh;
         width: 20%;
-        border: 1px solid black;
       }
       .footer-section-4 {
-        height: 50vh;
+        height: 32vh;
         width: 25%;
-        border: 1px solid black;
       }
       .footer-section-5 {
-        height: 50vh;
+        height: 40vh;
         width: 25%;
-        border: 1px solid black;
+      }
+      .text-contact-us {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .content-contact-us {
+        font-size: 14px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .fsec-1cont-1 {
+        font-size: 30px;
+        font-weight: 500;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .fsec-1cont-2 {
+        font-size: 18px;
+        margin-top: 4%;
+        margin-bottom: 6%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .fsec-1cont-3 {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .social-media-images {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .reach-out-section {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 7%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .fsec3-cont-1,
+      .fsec-2cont-1 {
+        font-size: 18px;
+        font-weight: 550;
+
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .fsec3-cont-1 p {
+        margin-bottom: 5%;
+      }
+      .fsec-2cont-1 p {
+        margin-bottom: 5%;
       }
     </style>
   </head>
@@ -525,34 +583,36 @@
       <footer class="footer">
         <div class="footer-content">
           <div class="footer-section-1">
-            <div><p>Shop Non-Stop on Meesho</p></div>
-            <div>
+            <div class="fsec-1cont-1">
+              <p>Shop Non-Stop on Meesho</p>
+            </div>
+            <div class="fsec-1cont-2">
               <p>
-                Trusted by more than 1 Crore Indians Cash on Delivery | Free
-                Delivery
+                Trusted by more than 1 Crore Indians <br />Cash on Delivery |
+                Free Delivery
               </p>
             </div>
-            <div>
+            <div class="fsec-1cont-3">
               <div>
                 <img
                   class="play-store-image"
-                  src="./playstoreIcon_500.webp"
-                  height="40"
+                  src="./playstore-icon-big_400.webp"
+                  height="50"
                   width="180"
                 />
               </div>
               <div>
                 <img
                   class="play-store-image"
-                  src="./appstoreIcon_500.webp"
-                  height="40"
+                  src="./appstore-icon-big_400.webp"
+                  height="50"
                   width="180"
                 />
               </div>
             </div>
           </div>
           <div class="footer-section-2">
-            <div>
+            <div class="fsec-2cont-1">
               <p>Careers</p>
               <p>Become a supplier</p>
               <p>Hall of Fame</p>
@@ -560,17 +620,17 @@
             </div>
           </div>
           <div class="footer-section-3">
-            <div>
+            <div class="fsec3-cont-1">
               <p>Legal and Policies</p>
               <p>Meesho Tech Blog</p>
               <p>Notices and Returns</p>
             </div>
           </div>
           <div class="footer-section-4">
-            <div>
+            <div class="reach-out-section">
               <p>Reach out to us</p>
             </div>
-            <div>
+            <div class="social-media-images">
               <img src="./facebook.webp" />
               <img src="./instagram.webp" />
               <img src="./youtube.webp" />
@@ -579,10 +639,10 @@
             </div>
           </div>
           <div class="footer-section-5">
-            <div>
+            <div class="text-contact-us">
               <p>Contact Us</p>
             </div>
-            <div>
+            <div class="content-contact-us">
               <p>
                 Fashnear Technologies Private Limited, <br />CIN:
                 U74900KA2015PTC082263 3rd Floor, Wing-E, Helios Business
