@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sarthi-website</title>
-    <link rel="icon" type="" href="../../g" />
+    <title>sarthi.com</title>
     <style>
       * {
         margin: 0;
@@ -12,164 +9,366 @@
         box-sizing: border-box;
       }
       .header-1 {
-        border: 1px solid black;
-        height: 15vh;
+        height: 12vh;
         width: 100%;
-        background-color: rgb(28, 166, 239);
-      }
-      .header-1-section-1 {
+        background-color: rgb(29, 166, 238);
         border: 1px solid black;
-        height: 15vh;
+      }
+      .content-header-1 {
+        background-color: rgb(29, 166, 238);
+        height: 12vh;
         width: 95%;
-        margin: 0px 2%;
+        margin: 0px 1%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+      }
+      .sarathi-image {
+        margin-left: -14%;
+      }
+
+      .date-time {
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-      .body-items{
-        border: 1px solid black;
-        height:10vh;
-        width:100%;
-      }
-      .body-items-section-1{
-        border: 1px solid black;
-        height:10vh;
-        width:80%;
+      .language {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-left:10%;
+        border: 1px solid black;
       }
-      .body-items-section-2{
-       
-        height:10vh;
-        width:10%;
-        margin-left:110px;
-
+      .cdac {
+        height: 5vh;
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
       }
-      span{
-        width:100%;
-        height:5vh;
+      .A-A-A {
+        border: 1px solid black;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header-2 {
+        height: 6vh;
+        width: 100%;
+        border: 1px solid black;
+        background-color: rgb(31, 131, 185);
+      }
+      .content-header-2 {
+        background-color: rgb(31, 131, 185);
+        height: 6vh;
+        width: 90%;
+        margin: 0px 1%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+      }
+      .main {
+        height: 85vh;
+        width: 95%;
+        margin: 0px 3%;
+      }
+      .container {
+        height: 15vh;
+        width: 100%;
+      }
+      .container-1 {
+        height: 10vh;
+        width: 100%;
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .box-1,
+      .box-2,
+      .box-3,
+      .box-4,
+      .box-5,
+      .box-6 {
+        height: 10vh;
+        width: 16%;
+        text-align: center;
+        cursor: pointer;
+      }
+      .licence {
+        transition: transform 2s;
+      }
+      .licence:hover {
+        transform: rotate(360deg);
+      }
+      .box-7,
+      .box-8,
+      .box-9,
+      .box-10,
+      .box-11,
+      .box-12 {
+        height: 10vh;
+        width: 16%;
+        text-align: center;
+        cursor: pointer;
+      }
+      .payment {
+        transition: transform 2s;
+      }
+      .payment:hover {
+        transform: scale(0.7);
+      }
+      .doctor {
+        transition: transform 2s;
+      }
+      .doctor:hover {
+        transform: rotate(180deg);
+      }
+      .box-13,
+      .box-14,
+      .box-15,
+      .box-16,
+      .box-17,
+      .box-18 {
+        height: 10vh;
+        width: 16%;
+        text-align: center;
+        cursor: pointer;
+      }
+      .box-19 {
+        height: 10vh;
+        width: 16%;
+        text-align: center;
+        cursor: pointer;
+      }
+      .print {
+        transition: transform 2s;
+      }
+      .print:hover {
+        transform: skewy(20deg);
+      }
+      .renewal {
+        transition: transform 2s;
+      }
+      .renewal:hover {
+        transform: scale(1.3);
+      }
+      .ncli {
+        transition: transform 2s;
+      }
+      .ncli:hover {
+        transform: translate(-50px, 50px);
+      }
+      span {
+        height: 5vh;
+        width: 100%;
         display: inline-block;
       }
-      .body-images{
-        height:50px;
-        width:50px;
-        
-
+      .footer {
+        height: 18vh;
+        width: 100%;
+        background-color: rgb(29, 166, 238);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
-      p{
-        font-size:13px;
-        
-       
-
+      .vani-gif {
+        position: sticky;
+      }
+      .footer-section-1 {
+        background-color: rgb(29, 166, 238);
+        height: 18vh;
+        width: 70%;
+        margin: 0% 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .driving {
+        transition: transform 2s;
+      }
+      .driving:hover {
+        transform: skew(15deg, 15deg);
       }
     </style>
   </head>
   <body>
-    <main class="main-container">
-      <header class="header-1">
-        <div class="header-1-section-1">
-          <div class="ministry-logo">
-            <img src="./ministry-nic-logo.png" width="300" height="75" />
-          </div>
-          <div><img src="./parivahan-logo.png" /></div>
-          <div><p>Language:</p></div>
-          <div></div>
-          <div></div>
+    <header class="header-1">
+      <div class="content-header-1">
+        <div class="ministry-road-image">
+          <img class="ministry-nic-logo" src="./ministry-nic-logo.png" />
         </div>
-      </header>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div>
-          <button></button>
-          <button></button>
+        <div class="sarathi-image">
+          <img src="./parivahan-logo.png" />
         </div>
-      </div>
-      <div class="body-items">
-        <div class="body-items-section-1">
-          <div>
-            <img class="body-images" src="./licence.png"/>
-            <p>Apply for Linear Licence</p>
+        <div class="date-time-language">
+          <div class="date-time">
+            <div><p>DATE:17-04-2024</p></div>
+            <div><p>TIME:02:43:35 PM</p></div>
           </div>
-          <div>
-             <img class="body-images" src="./driving-icon.png"/>
-             <p>Apply for Driving Licence</p>
-          </div>
-          <div>
-              <img class="body-images" src="./renewal-icon.png"/>
-               <p>Apply for DL Renewal</p>
-          </div>
-          <div><img class="body-images" src="./NCL1.png"/>
-            <p>Apply for Duplicate DL</p></div>
-
-          <div>
-            <img class="body-images" src="./CA.png"/>
-            <p>Apply for Change of Address</p></div>
-          <div><img class="body-images" src="./IDP.png"/>
-            <p>Apply for International Driving Permit</p> <P>(IDP)</P></div>
-        </div>
-      </div>
-      <span></span>
-      <div class="body-items">
-        <div class="body-items-section-1">
-          <div>
-            <img class="body-images" src="./ex.png"/>
-            <p>DL Extract</p></div>
-          <div><img class="body-images" src="./feepay-icon2.png"/>
-            <p>Fee Payment</p></div>
-          <div><img class="body-images" src="./print.png"/>
-            <p>Print Application Form</p></div>
-          <div><img class="body-images" src="./withdrew-icon1.png"/>
-            <p>Service Withdraw</p></div>
-          <div><img class="body-images" src="./dlservice-icon.png"/>
-            <p>DL Service(Replace of DL/Other)</p></div>
-          <div><img class="body-images" src="./camp-icon.png"/>
-            <P>Add Class of Vehicle to an application</P></div>
-        </div>
-      </div>
-      <span></span>
-      <div class="body-items">
-        <div class="body-items-section-1">
-            <div><img class="body-images" src="./slot-icon.png"/>
-                <p>Appointment</p></div>
-            <div><img class="body-images" src="./testingpass-icon.png"/>
-                <p>Tutorial for LL Test</p></div>
-            <div><img class="body-images" src="./status-icon3.png"/>
-                <p>Complete Your Pending Application</p></div>
-            <div><img class="body-images" src="./feepay-icon2.png"/>
-                <p>Check Payment Status</p></div>
-            <div><img class="body-images" src="./upload-icon.png"/>
-                <p>Upload Document</p>
+          <div class="language">
+            <div><p>Lnguage:</p></div>
+            <div class="cdac">
+              <div><img src="./cdac-logo.png" height="20" width="20" /></div>
             </div>
-            <div><img class="body-images" src="./LLTest.png"/>
-                <p>Online LL Test(STALL)</p>
-            </div>
+            <selector></selector>
           </div>
+        </div>
+        <div class="login-button">
+          <div class="A-A-A">
+            <p>A-</p>
+            <p>A</p>
+            <p>A+</p>
+          </div>
+          <div><button>Login</button></div>
+        </div>
       </div>
-      <span></span>
-      <div class="body-items">
-            <div class="body-items-section-2">
-               <div>
-                  <img class="body-images" src="./doctor.png"/>
-                  <p>Find Doctor</p>
-                </div>
-           </div>
+    </header>
+    <div class="header-2">
+      <div class="content-header-2">
+        <p>Learner Licence</p>
+        <p>Driving liCENCE</p>
+        <p>Conductor Licence</p>
+        <p>Driving School Licence</p>
+        <p>Appointment</p>
+        <p>Upload Document</p>
+        <p>Fee Payment</p>
+        <p>Others</p>
+        <button>application status</button>
+        <button>file your grievance</button>
       </div>
     </div>
-    </div>
-      <footer>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+    <div class="main">
+      <div class="container">
+        <div class="container-1">
+          <div class="box-1">
+            <img class="licence" src="./licence.png" />
+            <p>Apply for Learner Licence</p>
+          </div>
+          <div class="box-2">
+            <img class="driving" src="./driving-icon.png" />
+            <p>Apply for Driving Licene</p>
+          </div>
+          <div class="box-3">
+            <img class="renewal" src="./renewal-icon.png" />
+            <p>Apply for DL Licence</p>
+          </div>
+          <div class="box-4">
+            <img class="ncli" src="./NCL1.png" />
+            <p>Apply for Duplicate DL</p>
+          </div>
+          <div class="box-5">
+            <img src="./CA.png" />
+            <p>Apply for Chnage of Address</p>
+          </div>
+          <div class="box-6">
+            <img src="./IDP.png" />
+            <p>Apply for International Driving Permit(IDP)</p>
+          </div>
         </div>
-      </footer>
-    </main>
+      </div>
+      <div class="container">
+        <div class="container-1">
+          <div class="box-7">
+            <img src="./ex.png" />
+            <p>DL Extract</p>
+          </div>
+          <div class="box-8">
+            <img class="payment" src="./payment-icon3.png" />
+            <p>Fee Payment</p>
+          </div>
+          <div class="box-9">
+            <img class="print" src="./print.png" />
+            <p>Print Application Forms</p>
+          </div>
+          <div class="box-10">
+            <img src="./withdrew-icon1.png" />
+            <p>Service Withdraw</p>
+          </div>
+          <div class="box-11">
+            <img src="./dlservice-icon.png" />
+            <p>DL Services(Replace of DL/Others)</p>
+          </div>
+          <div class="box-12">
+            <img src="./camp-icon.png" />
+            <p>Add Class of Vehicle to an Application</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-1">
+          <div class="box-13">
+            <img src="./slot-icon.png" />
+            <p>Appointments</p>
+          </div>
+          <div class="box-14">
+            <img src="./testingpass-icon.png" />
+            <p>Tutorial for LL Test</p>
+          </div>
+          <div class="box-15">
+            <img src="./status-icon3.png" />
+            <p>Complete your Pending Application</p>
+          </div>
+          <div class="box-16">
+            <img src="./feepay-icon2.png" />
+            <p>Check Payment Status</p>
+          </div>
+          <div class="box-17">
+            <img src="./upload-icon.png" />
+            <p>Uplload Document</p>
+          </div>
+          <div class="box-18">
+            <img src="./LLTest.png" />
+            <p>Online LL Test(STALL)</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-1">
+          <div class="box-19">
+            <img class="doctor" src="./doctor.png" />
+            <p>driving licence</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span></span>
+    <footer class="footer">
+      <div class="footer-section-1">
+        <div class="nic-logo">
+          <img src="./nic-logo.png" />
+        </div>
+        <div>
+          <img src="./digital_logo_main.png" />
+        </div>
+        <div>
+          <p>Dashboard</p>
+          <p>Doctor Registration</p>
+          <p>Find Doctor</p>
+          <p>Activate User Account</p>
+        </div>
+        <div>
+          <p>User Manual</p>
+          <p>Acts & Rules</p>
+          <p>Screen Reader</p>
+        </div>
+        <div>
+          <p>Contact Us</p>
+          <p>Feedback/Complaints</p>
+          <p>FAQs</p>
+        </div>
+        <div>
+          <p>Parivahan</p>
+          <p>Sitemap</p>
+        </div>
+      </div>
+      <div class="vani-gif">
+        <img src="./vani-gif.gif" height="130" width="200" />
+      </div>
+    </footer>
   </body>
 </html>
