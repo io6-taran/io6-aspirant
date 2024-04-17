@@ -3,56 +3,185 @@
   <head>
     <title>position-avenger</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
-      }
-      .main {
-        background-color: rgb(215, 241, 241);
-        margin: 0px 20%;
-        width: 60%;
-        height: 100vh;
-      }
-      h1 {
-        color: rgb(137, 30, 14);
-      }
-      .avenger {
-        padding: 20px 4%;
-        display: flex;
-        justify-content: baseline;
-        align-items: left;
-      }
-      .rombus-main {
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-      .rombus {
-        height: 120px;
-        width: 120px;
-        background-color: rgb(215, 63, 200);
+      .main {
+        background-color: rgb(215, 241, 241);
+        margin: auto;
+        width: 40%;
+        height: 100vh;
+        position: relative;
+        z-index: 2;
+      }
+      .covering-1 {
+        height: 100vh;
+        width: 30%;
+        z-index: 6;
+        background-color: white;
+      }
+      .covering-2 {
+        height: 100vh;
+        width: 30%;
+        z-index: 6;
+        background-color: white;
+      }
+      .avenger {
+        height: 11vh;
+        width: 40%;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: left;
+      }
+      .avenger-text {
+        color: rgb(137, 30, 14);
+        font-size: 40px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .rombus-1 {
+        height: 250px;
+        width: 250px;
+        transform: rotate(45deg);
+
+        position: absolute;
+        right: -20%;
+        top: 21%;
+        background-color: rgb(94, 180, 111);
         border-radius: 10px;
         border-spacing: 20px;
       }
-      .rombus-1 {
-        height: 120px;
-        width: 120px;
-        background-color: rgb(215, 63, 200);
-        border-radius: 10px;
-        border-spacing: 20px;
+      .year {
+        height: 5.5vh;
+        font-size: 25px;
+        background-color: antiquewhite;
+        color: red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+        border-radius: 5px;
+        transform: rotate(315deg);
+        position: absolute;
+        top: 65%;
+        left: 5%;
       }
       .rombus-2 {
-        height: 120px;
-        width: 120px;
+        height: 160px;
+        width: 160px;
+        background-image: url("./thor.jpeg");
+        background-size: 100% 100%;
+        position: absolute;
+        right: 18%;
+        top: 11%;
+        transform: rotate(45deg);
         background-color: rgb(215, 63, 200);
         border-radius: 10px;
+        border-spacing: 20px;
+      }
+      .half-capsule-rombus3-1 {
+        height: 12vh;
+        background-color: rgb(61, 112, 73);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+
+        width: 10%;
+        position: absolute;
+        left: 30%;
+        top: 17%;
+        transform: rotate(315deg);
+      }
+      .half-capsule-rombus3-2 {
+        height: 12vh;
+        background-color: rgb(61, 112, 73);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+
+        width: 10%;
+        position: absolute;
+        left: 21%;
+        top: 42%;
+        transform: rotate(225deg);
+      }
+      .half-capsule-rombus3-3 {
+        height: 65vh;
+        border-top-left-radius: 100px;
+        background-color: rgb(61, 112, 73);
+        border-top-right-radius: 100px;
+
+        width: 10%;
+        position: absolute;
+        left: 15%;
+        top: 38%;
+        transform: rotate(225deg);
       }
       .rombus-3 {
-        height: 120px;
-        width: 120px;
+        height: 200px;
+        width: 200px;
+        background-image: url("./iron-man.jpeg");
+        background-size: 100% 100%;
+        position: absolute;
+        left: 28%;
+        top: 25%;
+        transform: rotate(45deg);
         background-color: rgb(215, 63, 200);
         border-radius: 10px;
       }
+      .rombus-4 {
+        height: 210px;
+        width: 210px;
+        background-image: url("./hulk.jpeg");
+        background-size: 100% 100%;
+        position: absolute;
+        right: 13.5%;
+        z-index: 5;
+        bottom: 26%;
+        transform: rotate(45deg);
+        background-color: rgb(215, 63, 200);
+        border-radius: 10px;
+      }
+      .half-capsule-rombus4-1 {
+        height: 15vh;
+        border-top-left-radius: 100px;
+        background-color: rgb(61, 112, 73);
+        border-top-right-radius: 100px;
+
+        width: 10%;
+        position: absolute;
+        right: 34%;
+        bottom: 15%;
+        z-index: 2;
+        transform: rotate(225deg);
+      }
+      .half-capsule-rombus4-2 {
+        height: 40vh;
+        border-top-left-radius: 100px;
+        background-color: rgb(61, 112, 73);
+        border-top-right-radius: 100px;
+
+        width: 10%;
+        position: absolute;
+        right: 3%;
+        bottom: 11%;
+        transform: rotate(135deg);
+      }
       .bottom {
-        padding-top: 70%;
+        position: absolute;
+        bottom: 5%;
+        left: 15%;
       }
       .thor {
         color: rgb(110, 168, 80);
@@ -67,11 +196,23 @@
         font-size: 23px;
       }
       hr {
-        width: 200px;
+        width: 150px;
+      }
+      .follow-us {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .anivarsary-25 {
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
       }
     </style>
   </head>
   <body>
+    <div class="covering-1"></div>
+
     <div class="main">
       <div class="avenger">
         <img
@@ -79,24 +220,38 @@
           height="80"
           width="80"
         />
-        <h1><u>Avengers</u></h1>
+        <p class="avenger-text"><u>Avengers</u></p>
       </div>
-      <div class="rombus-main">
-        <div class="rombus"></div>
-        <div class="rombus-1"></div>
-        <div class="rombus-2"></div>
-        <div class="rombus-3"></div>
-        <div class="rombus-4"></div>
+
+      <div class="rombus-1">
+        <div class="year"><p>2022</p></div>
       </div>
+      <div class="rombus-2"></div>
+      <div class="half-capsule-rombus3-1"></div>
+      <div class="half-capsule-rombus3-2"></div>
+      <div class="half-capsule-rombus3-3"></div>
+      <div class="rombus-3"></div>
+      <div class="rombus-4"></div>
+      <div class="half-capsule-rombus4-1"></div>
+      <div class="half-capsule-rombus4-2"></div>
       <div class="bottom">
         <ul type="none">
-          <li class="thor"><b>Thor</b></li>
-          <li class="iron-man"><b>Iron Man</b></li>
-          <li class="hulk"><b>Hulk</b></li>
+          <li class="thor">Thor</li>
+          <li class="iron-man">Iron Man</li>
+          <li class="hulk">Hulk</li>
         </ul>
         <hr />
-        <div>Folllow us on</div>
+        <div class="follow-us">
+          <div><p>Folllow us on</p></div>
+          <div>
+            <img src="./facebook twiteer logo.jpeg" height="25" width="50" />
+          </div>
+        </div>
+      </div>
+      <div class="anivarsary-25">
+        <img src="./25th anivarsary logo.jpeg" height="70" width="70" />
       </div>
     </div>
+    <div class="covering-2"></div>
   </body>
 </html>
