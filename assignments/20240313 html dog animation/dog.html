@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dog-aniamtion</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+      }
+      .main-container {
+        height: 60vh;
+        width: 100%;
+
+        background-color: black;
+        margin-top: 10%;
+      }
+      .dog-container {
+        margin: 2% 25%;
+        height: 52vh;
+        width: 35%;
+        position: relative;
+        background-color: rgb(51, 51, 51);
+      }
+      .face-circle {
+        height: 23vh;
+        width: 33%;
+        position: absolute;
+        left: 30%;
+        z-index: 10;
+        border-radius: 50%;
+
+        background-color: rgb(101, 68, 54);
+      }
+      .dog-ear {
+        height: 18vh;
+        width: 10%;
+        position: absolute;
+        border-bottom-left-radius: 150px;
+        background-color: rgb(101, 68, 54);
+        left: 45%;
+        top: 20%;
+        z-index: 20;
+      }
+      .dog-ear-shadow {
+        height: 18vh;
+        width: 9%;
+        position: absolute;
+        border-bottom-left-radius: 150px;
+        left: 44%;
+        top: 20%;
+        z-index: 19;
+        background-color: rgb(74, 49, 36);
+      }
+      .mouth-semicircle {
+        height: 70px;
+        width: 140px;
+        position: absolute;
+        left: 19%;
+        top: 25%;
+        z-index: 2;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+
+        background-color: rgb(101, 68, 54);
+      }
+      .nose-small-circle {
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        left: 18%;
+        top: 23%;
+        z-index: 4;
+        border-radius: 50px;
+
+        background-color: black;
+      }
+      .dog-body-rectangle {
+        height: 23vh;
+        width: 20%;
+        position: absolute;
+        left: 35%;
+        bottom: 14%;
+        z-index: 3;
+
+        background-color: rgb(101, 68, 54);
+      }
+      .dog-neck-rectangle {
+        height: 3vh;
+        width: 20%;
+        position: absolute;
+        left: 35%;
+        top: 42%;
+        z-index: 11;
+
+        background-color: rgb(250, 167, 53);
+      }
+      .neck-small-circle {
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        left: 32.1%;
+        top: 46%;
+        z-index: 4;
+        border-radius: 50px;
+
+        background-color: white;
+      }
+      .dog-leg {
+        height: 10vh;
+        width: 30%;
+        position: absolute;
+        left: -0.5%;
+        bottom: 22%;
+        z-index: 11;
+        border-top-right-radius: 30px;
+
+        background-color: rgb(74, 49, 36);
+      }
+      .dog-back {
+        height: 19.5vh;
+        width: 20%;
+        position: absolute;
+        right: 30%;
+        bottom: 14%;
+        z-index: 3;
+        border-top-right-radius: 100px;
+
+        background-color: rgb(101, 68, 54);
+      }
+      .dog-foot {
+        height: 45px;
+        width: 90px;
+        position: absolute;
+        left: 27.5%;
+        bottom: 14%;
+        z-index: 10;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+
+        background-color: rgb(101, 68, 54);
+      }
+      .dog-tail {
+        height: 150px;
+        width: 45px;
+        position: absolute;
+        right: 25%;
+        bottom: 23%;
+        z-index: 10;
+        border-bottom-right-radius: 200px;
+        border-top-right-radius: 200px;
+
+        background-color: rgb(74, 49, 36);
+      }
+      .bone-rectangle {
+        height: 3vh;
+        width: 20%;
+        position: absolute;
+        left: 5%;
+        bottom: 2%;
+        z-index: 11;
+
+        background-color: white;
+      }
+      .bone-small-circle-1 {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: 3%;
+        bottom: 5%;
+        z-index: 16;
+        border-radius: 50px;
+
+        background-color: white;
+      }
+      .bone-small-circle-2 {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: 3%;
+        bottom: 0%;
+        z-index: 16;
+        border-radius: 50px;
+
+        background-color: white;
+      }
+      .bone-small-circle-3 {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: 23%;
+        bottom: 0%;
+        z-index: 16;
+        border-radius: 50px;
+
+        background-color: white;
+      }
+      .bone-small-circle-4 {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: 23%;
+        bottom: 5%;
+        z-index: 16;
+        border-radius: 50px;
+
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="dog-container">
+        <div class="face-circle"></div>
+        <div class="dog-ear"></div>
+        <div class="dog-ear-shadow"></div>
+        <div class="mouth-semicircle"></div>
+        <div class="nose-small-circle"></div>
+        <div class="dog-body-rectangle">
+          <div class="dog-leg"></div>
+        </div>
+        <div class="dog-neck-rectangle"></div>
+        <div class="neck-small-circle"></div>
+        <div class="dog-back"></div>
+        <div class="dog-foot"></div>
+        <div class="dog-tail"></div>
+        <div class="bone-rectangle"></div>
+        <div class="bone-small-circle-1"></div>
+        <div class="bone-small-circle-2"></div>
+        <div class="bone-small-circle-3"></div>
+        <div class="bone-small-circle-4"></div>
+      </div>
+    </div>
+  </body>
+</html>
