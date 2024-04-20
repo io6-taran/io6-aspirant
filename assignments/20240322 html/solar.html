@@ -3,114 +3,163 @@
   <head>
     <title>solar-system</title>
     <style>
-       .main {
-         height: 90%;
-         width: 90%;
-         border: 1px solid black;
-         margin: 0% 2%;
-         position: relative;
-       }
-       .neptune {
-         height: 90vh;
-         width: 100%;
-         border: 1px solid black;
-         position: absolute;
-         left: 0%;
-         top: 0%;
-         border-radius: 50%;
-       }
-       .uranus {
-         height: 90vh;
-         width: 100%;
-         border: 1px solid black;
-         position: absolute;
-         left: 0%;
-         top: 0%;
-         border-radius: 50%;
-       }
-       .jupiter {
-         height: 80vh;
-         width: 90%;
-         border: 1px solid black;
-         position: absolute;
-         left: 4%;
-         top: 5%;
-         border-radius: 50%;
-         /* animation: jupiter 10s infinite;
-       }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        height: 110vh;
+        width: 55%;
+        border: 1px solid black;
+        margin: 0% 2%;
+        position: relative;
+      }
+      .neptune {
+        height: 800px;
+        width: 800px;
+        border: 1px solid black;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        border-radius: 50%;
+        animation: venus 10s infinite;
+      }
+      @keyframes venus {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .uranus {
+        height: 720px;
+        width: 720px;
+        border: 1px solid black;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        border-radius: 50%;
+        animation: venus 10s infinite;
+      }
+      @keyframes venus {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .jupiter {
+        height: 630px;
+        width: 630px;
+        border: 1px solid black;
+        position: absolute;
+        left: 10.5%;
+        top: 10.5%;
+        border-radius: 50%;
+        animation: jupiter 10s infinite;
+      }
 
       @keyframes jupiter {
-         from {
-           transform: rotate(0deg);
-         }
-         to {
-           transform: rotate(360deg);
-         }
-       }/
-
-       .seturn {
-         height: 71vh;
-         width: 80%;
-         border-radius: 50%;
-         border: 1px solid black;
-         position: absolute;
-         left: 9%;
-         top: 5.5%;
-       }
-       .mars {
-         height: 62vh;
-         width: 69%;
-         border: 1px solid black;
-         position: absolute;
-         left: 14.5%;
-         top: 11%;
-         border-radius: 50%;
-       }
-       .earth {
-         height: 52vh;
-         width: 58%;
-         border: 1px solid black;
-         position: absolute;
-         left: 20%;
-         top: 17%;
-         border-radius: 50%;
-       }
-       .venus {
-         height: 42vh;
-         width: 47%;
-         border: 1px solid black;
-         position: absolute;
-         left: 25.5%;
-         top: 23%;
-         border-radius: 50%;
-         animation: venus 10s infinite;
-       }
-       @keyframes venus {
-         from {
-           transform: rotate(0deg);
-         }
-         to {
-           transform: rotate(360deg);
-         }
-       }
-       .mercury {
-         height: 32vh;
-         width: 36%;
-         border: 1px solid black;
-         position: absolute;
-         left: 31%;
-         top: 29%;
-         border-radius: 50%;
-         animation: mercury 10s infinite;
-       }
-       @keyframes mercury {
-         from {
-           transform: rotate(0deg);
-         }
-         to {
-           transform: rotate(360deg);
-         }
-       }
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .seturn {
+        height: 535px;
+        width: 535px;
+        border-radius: 50%;
+        border: 1px solid black;
+        position: absolute;
+        left: 16%;
+        top: 16%;
+        animation: venus 10s infinite;
+      }
+      @keyframes venus {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .mars {
+        height: 440px;
+        width: 440px;
+        border: 1px solid black;
+        position: absolute;
+        left: 22%;
+        top: 22%;
+        border-radius: 50%;
+        animation: venus 10s infinite;
+      }
+      @keyframes venus {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .earth {
+        height: 360px;
+        width: 360px;
+        border: 1px solid black;
+        position: absolute;
+        left: 27%;
+        top: 27%;
+        border-radius: 50%;
+        animation: venus 10s infinite;
+      }
+      @keyframes venus {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .venus {
+        height: 270px;
+        width: 270px;
+        border: 1px solid black;
+        position: absolute;
+        left: 32%;
+        top: 32%;
+        border-radius: 50%;
+        animation: venus 10s infinite;
+      }
+      @keyframes venus {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .mercury {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        position: absolute;
+        left: 36%;
+        top: 36%;
+        border-radius: 50%;
+        animation: mercury 10s infinite;
+      }
+      @keyframes mercury {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
     </style>
   </head>
   <body>
