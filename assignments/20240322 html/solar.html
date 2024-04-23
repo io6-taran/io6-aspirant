@@ -8,24 +8,41 @@
         padding: 0;
         box-sizing: border-box;
       }
+      body {
+        background-image: url("./solar\ system-background-image.webp");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
       .main {
-        height: 110vh;
+        height: 102vh;
         width: 55%;
-        border: 1px solid black;
-        margin: 0% 2%;
         position: relative;
+        margin: 3% 20%;
       }
       .neptune {
-        height: 800px;
-        width: 800px;
-        border: 1px solid black;
-        position: absolute;
-        left: 0%;
-        top: 0%;
+        height: 730px;
+        width: 730px;
+        border: 1px solid white;
+
         border-radius: 50%;
-        animation: venus 10s infinite;
+        animation: neptune 30s ease-in-out infinite;
       }
-      @keyframes venus {
+      @keyframes neptune {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .neptune-image {
+        border-radius: 50%;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        animation: neptune-neptune-image 10s ease-in-out infinite;
+      }
+      @keyframes neptune-neptune-image {
         from {
           transform: rotate(0deg);
         }
@@ -34,16 +51,31 @@
         }
       }
       .uranus {
-        height: 720px;
-        width: 720px;
-        border: 1px solid black;
+        height: 650px;
+        width: 650px;
+        border: 1px solid white;
         position: absolute;
         left: 5%;
         top: 5%;
         border-radius: 50%;
-        animation: venus 10s infinite;
+        animation: uranus 20s ease-in infinite;
       }
-      @keyframes venus {
+      @keyframes uranus {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .uranus-image {
+        border-radius: 50%;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        animation: uranus-image 10s ease-in-out infinite;
+      }
+      @keyframes uranus-image {
         from {
           transform: rotate(0deg);
         }
@@ -52,14 +84,14 @@
         }
       }
       .jupiter {
-        height: 630px;
-        width: 630px;
-        border: 1px solid black;
+        height: 570px;
+        width: 570px;
+        border: 1px solid white;
         position: absolute;
-        left: 10.5%;
-        top: 10.5%;
+        left: 9%;
+        top: 10%;
         border-radius: 50%;
-        animation: jupiter 10s infinite;
+        animation: jupiter 25s ease-out infinite;
       }
 
       @keyframes jupiter {
@@ -70,17 +102,47 @@
           transform: rotate(360deg);
         }
       }
-      .seturn {
-        height: 535px;
-        width: 535px;
+      .jupiter-image {
         border-radius: 50%;
-        border: 1px solid black;
         position: absolute;
-        left: 16%;
-        top: 16%;
-        animation: venus 10s infinite;
+        left: 10%;
+        top: 10%;
+        animation: jupiter-image 10s ease-out infinite;
       }
-      @keyframes venus {
+      @keyframes jupiter-image {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .seturn {
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        border: 1px solid white;
+        position: absolute;
+        left: 13%;
+        top: 14.5%;
+        animation: seturn 10s ease-in infinite;
+      }
+      @keyframes seturn {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .seturn-image {
+        border-radius: 50%;
+        position: absolute;
+        left: 10%;
+        top: 6%;
+        animation: seturn-image 10s ease-in-out infinite;
+      }
+      @keyframes seturn-image {
         from {
           transform: rotate(0deg);
         }
@@ -89,16 +151,31 @@
         }
       }
       .mars {
-        height: 440px;
-        width: 440px;
-        border: 1px solid black;
+        height: 420px;
+        width: 420px;
+        border: 1px solid white;
         position: absolute;
-        left: 22%;
-        top: 22%;
+        left: 17.5%;
+        top: 20%;
         border-radius: 50%;
-        animation: venus 10s infinite;
+        animation: mars 10s ease-out infinite;
       }
-      @keyframes venus {
+      @keyframes mars {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .mars-image {
+        border-radius: 50%;
+        position: absolute;
+        left: 5%;
+        top: 12%;
+        animation: mars-image 10s ease-in-out infinite;
+      }
+      @keyframes mars-image {
         from {
           transform: rotate(0deg);
         }
@@ -107,16 +184,31 @@
         }
       }
       .earth {
-        height: 360px;
-        width: 360px;
-        border: 1px solid black;
+        height: 350px;
+        width: 350px;
+        border: 1px solid white;
         position: absolute;
-        left: 27%;
-        top: 27%;
+        left: 21.5%;
+        top: 25%;
         border-radius: 50%;
-        animation: venus 10s infinite;
+        animation: earth 15s ease-in infinite;
       }
-      @keyframes venus {
+      @keyframes earth {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .earth-image {
+        border-radius: 50%;
+        position: absolute;
+        left: 10%;
+        top: 3%;
+        animation: earth-image 10s ease-in-out infinite;
+      }
+      @keyframes earth-image {
         from {
           transform: rotate(0deg);
         }
@@ -127,14 +219,29 @@
       .venus {
         height: 270px;
         width: 270px;
-        border: 1px solid black;
+        border: 1px solid white;
         position: absolute;
-        left: 32%;
-        top: 32%;
+        left: 26%;
+        top: 30%;
         border-radius: 50%;
-        animation: venus 10s infinite;
+        animation: venus 20s ease-out infinite;
       }
       @keyframes venus {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .venus-image {
+        border-radius: 50%;
+        position: absolute;
+        left: 10%;
+        top: 0%;
+        animation: venus-image 10s ease-in-out infinite;
+      }
+      @keyframes venus-image {
         from {
           transform: rotate(0deg);
         }
@@ -145,12 +252,12 @@
       .mercury {
         height: 200px;
         width: 200px;
-        border: 1px solid black;
+        border: 1px solid white;
         position: absolute;
-        left: 36%;
-        top: 36%;
+        left: 30%;
+        top: 35%;
         border-radius: 50%;
-        animation: mercury 10s infinite;
+        animation: mercury 25s ease-in infinite;
       }
       @keyframes mercury {
         from {
@@ -160,19 +267,102 @@
           transform: rotate(360deg);
         }
       }
+      .mercury-image {
+        border-radius: 50%;
+        position: absolute;
+        left: 6%;
+        top: 0%;
+        animation: mercury-image 10s ease-in-out infinite;
+      }
+      @keyframes mercury-image {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .sun {
+        position: absolute;
+        left: 35%;
+        top: 40%;
+      }
     </style>
   </head>
   <body>
     <div class="main">
-      <div class="neptune"></div>
-      <div class="uranus"></div>
-      <div class="jupiter"></div>
-      <div class="seturn"></div>
-      <div class="mars"></div>
-      <div class="earth"></div>
-      <div class="venus"></div>
-      <div class="mercury"></div>
-      <div class="sun"></div>
+      <div class="neptune">
+        <img
+          class="neptune-image"
+          src="./solar planet icons-modified (1).png"
+          height="55"
+          width="55"
+        />
+      </div>
+
+      <div class="uranus">
+        <img
+          class="uranus-image"
+          src="./solar planet icons-modified (2).png"
+          height="55"
+          width="55"
+        />
+      </div>
+      <div class="jupiter">
+        <img
+          class="jupiter-image"
+          src="./solar planet icons-modified (3).png"
+          height="55"
+          width="55"
+        />
+      </div>
+      <div class="seturn">
+        <img
+          class="seturn-image"
+          src="./solar planet icons-modified (4).png"
+          height="55"
+          width="55"
+        />
+      </div>
+      <div class="mars">
+        <img
+          class="mars-image"
+          src="./solar planet icons-modified (5).png"
+          height="55"
+          width="55"
+        />
+      </div>
+      <div class="earth">
+        <img
+          class="earth-image"
+          src="./solar planet icons-modified (6).png"
+          height="55"
+          width="55"
+        />
+      </div>
+      <div class="venus">
+        <img
+          class="venus-image"
+          src="./solar planet icons-modified (7).png"
+          height="55"
+          width="55"
+        />
+      </div>
+      <div class="mercury">
+        <img
+          class="mercury-image"
+          src="./solar planet icons-modified.png"
+          height="55"
+          width="55"
+        />
+      </div>
+      <div class="sun">
+        <img
+          src="./solar planet icons-modified (2).png"
+          height="120"
+          width="120"
+        />"
+      </div>
     </div>
   </body>
 </html>
