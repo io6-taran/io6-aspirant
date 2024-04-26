@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>car-animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .city {
+        height: 100vh;
+        width: 100%;
+        background-image: url("./car\ 2\ -roadmap.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+      }
+      .red-car-1 {
+        width: 45px;
+        position: absolute;
+        overflow: hidden;
+
+        top: 37%;
+        animation: red-car-1 10s ease-in infinite;
+      }
+      @keyframes red-car-1 {
+        0% {
+          top: 37%;
+          left: -5%;
+        }
+        5% {
+          top: 37%;
+          left: 7%;
+        }
+        10% {
+          transform: rotate(90deg);
+        }
+        15% {
+          top: 58%;
+          left: 7%;
+        }
+        20% {
+          transform: rotate(0deg);
+        }
+        25% {
+          top: 59%;
+          left: 24%;
+        }
+        30% {
+          transform: rotate(90deg);
+        }
+        35% {
+          top: 37%;
+          left: 24%;
+        }
+        40% {
+          transform: rotate(0deg);
+        }
+        45% {
+          top: 37%;
+          left: 39.5%;
+        }
+        50% {
+          transform: rotate(90deg);
+        }
+        55% {
+          top: 24.5%;
+          left: 39.5%;
+        }
+        60% {
+          transform: rotate(0deg);
+        }
+        65% {
+          top: 24%;
+          left: 58%;
+        }
+        70% {
+          transform: rotate(90deg);
+        }
+        75% {
+          top: 10%;
+          left: 58%;
+        }
+        80% {
+          transform: rotate(0deg);
+        }
+        85% {
+          top: 10%;
+          left: 73%;
+        }
+        90% {
+          transform: rotate(90deg);
+        }
+        100% {
+          top: -5%;
+          left: 73%;
+        }
+      }
+      .grey-car {
+        width: 45px;
+        overflow: hidden;
+        position: absolute;
+        top: 0%;
+        left: 24%;
+        transform: rotate(90deg);
+        animation: grey-car 10s ease-in infinite;
+      }
+      @keyframes grey-car {
+        0% {
+          top: 0%;
+          left: 24%;
+        }
+        10% {
+          top: 12%;
+          left: 24%;
+        }
+        20% {
+          transform: rotate(0deg);
+        }
+        30% {
+          top: 12%;
+          left: 58%;
+        }
+        40% {
+          transform: rotate(90deg);
+        }
+        50% {
+          top: 60%;
+          left: 58%;
+        }
+        60% {
+          transform: rotate(0deg);
+        }
+        70% {
+          top: 60%;
+          left: 91%;
+        }
+        80% {
+          transform: rotate(90deg);
+        }
+        100% {
+          top: 100%;
+          left: 91%;
+        }
+      }
+      .blue-car {
+        width: 20px;
+        height: 6vh;
+        overflow: hidden;
+        position: absolute;
+        top: 57.5%;
+        left: -5%;
+        transform: rotate(90deg);
+        animation: blue-car 20s ease-in infinite;
+      }
+      @keyframes blue-car {
+        0% {
+          top: 57.5%;
+          left: -5%;
+        }
+        5% {
+          top: 57.5%;
+          left: 41%;
+        }
+        10% {
+          transform: rotate(0deg);
+        }
+        15% {
+          top: 21%;
+          left: 40%;
+        }
+        20% {
+          transform: rotate(90deg);
+        }
+        25% {
+          top: 24%;
+          left: 58%;
+        }
+        30% {
+          transform: rotate(0deg);
+        }
+        35% {
+          top: 35%;
+          left: 58%;
+        }
+        40% {
+          transform: rotate(90deg);
+        }
+        45% {
+          top: 35%;
+          left: 75%;
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        55% {
+          top: 58%;
+          left: 76%;
+        }
+        60% {
+          transform: rotate(90deg);
+        }
+        65% {
+          top: 58%;
+          left: 92%;
+        }
+        70% {
+          transform: rotate(0deg);
+        }
+        75% {
+          top: 72%;
+          left: 92%;
+        }
+        80% {
+          transform: rotate(90deg);
+        }
+        85% {
+          top: 72%;
+          left: 76%;
+        }
+        90% {
+          transform: rotate(0deg);
+        }
+        95% {
+          top: 100%;
+          left: 76%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="city">
+      <img src="./car.png" alt="car" class="red-car-1" />
+      <img src="./grey-car-removebg-preview.png" alt="car" class="grey-car" />
+      <img
+        src="./car-3-image-removebg-preview.png"
+        alt="car-image"
+        class="blue-car"
+      />
+    </div>
+  </body>
+</html>

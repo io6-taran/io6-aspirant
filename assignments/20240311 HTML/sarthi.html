@@ -45,7 +45,6 @@
         background-color: white;
       }
       .A-A-A {
-        border: 1px solid black;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -54,7 +53,7 @@
       .header-2 {
         height: 6vh;
         width: 100%;
-        border: 1px solid black;
+
         background-color: rgb(31, 131, 185);
       }
       .content-header-2 {
@@ -65,7 +64,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid black;
       }
       .main {
         height: 85vh;
@@ -158,6 +156,18 @@
       }
       .ncli:hover {
         transform: translate(-50px, 50px);
+      }
+      .change-address {
+        transition: transform 2s;
+      }
+      .change-address:hover {
+        transform: translate(45px);
+      }
+      .tutorial-ll {
+        transition: transform 2s;
+      }
+      .tutorial-ll:hover {
+        transform: scale(1.5);
       }
       span {
         height: 5vh;
@@ -258,7 +268,7 @@
             <p>Apply for Duplicate DL</p>
           </div>
           <div class="box-5">
-            <img src="./CA.png" />
+            <img class="change-address" src="./CA.png" />
             <p>Apply for Chnage of Address</p>
           </div>
           <div class="box-6">
@@ -302,7 +312,7 @@
             <p>Appointments</p>
           </div>
           <div class="box-14">
-            <img src="./testingpass-icon.png" />
+            <img class="tutorial-ll" src="./testingpass-icon.png" />
             <p>Tutorial for LL Test</p>
           </div>
           <div class="box-15">
@@ -310,7 +320,7 @@
             <p>Complete your Pending Application</p>
           </div>
           <div class="box-16">
-            <img src="./feepay-icon2.png" />
+            <img class="payment-status" src="./feepay-icon2.png" />
             <p>Check Payment Status</p>
           </div>
           <div class="box-17">
