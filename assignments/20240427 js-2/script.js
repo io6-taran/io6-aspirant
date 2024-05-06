@@ -15,3 +15,5 @@ function hobbie() {
 const avengername = prompt("Enter avengername");
 console.log("My favorite avenger is Thor. I am dying heart fan of Thor");
 console.log("My favorite avenger is ironman. I am dying heart fan of ironman");
+
+//ques3-->Write a program to calculate sum of 5 subject entered using keyboard
