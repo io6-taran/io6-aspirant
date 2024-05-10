@@ -22,9 +22,3 @@
 	console.log("output-9", 56 + 100 + Number("Vinay"));  -->nan
 	console.log("output-9", 50 - "100" + "Vinay");  -->-50vinay
 */
-
-for (let i = 20; i <= 30; i++) {
-  for (let j = 20; j <= 10; j++) {
-    console.log(`table of ${i} x ${j}`, i * j);
-  }
-}
