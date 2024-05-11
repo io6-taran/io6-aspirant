@@ -1,5 +1,5 @@
 //four square star pattern
-document.write("SquareStarOfFourPattern");
+/*document.write("SquareStarOfFourPattern");
 document.write("<br>");
 const SquareStarOfFourPattern = () => {
   let str = "";
@@ -40,6 +40,8 @@ const reversalLeftTriangle = () => {
 };
 reversalLeftTriangle();
 
+document.write("rightriangle");
+document.write("<br>");
 const rightTriangle = (num) => {
   for (let i = num; i >= 1; i--) {
     for (let j = 1; j <= i - 1; j++) {
@@ -53,3 +55,15 @@ const rightTriangle = (num) => {
 };
 let num = Number(prompt("Enter the numbers"));
 rightTriangle(num);
+*/
+
+const leftTriangle = (numRow) => {
+  for (let i = 1; i <= numRow; i++) {
+    for (let j = 1; j <= i; j++) {
+      document.write("" + j + "");
+    }
+    document.write("<br>");
+  }
+};
+let numRow = Number(prompt("Enter the number of row to create a star pattern"));
+leftHalfTriangle(numRow);
