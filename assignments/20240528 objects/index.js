@@ -3551,10 +3551,88 @@ const swiggyResponse = {
 };
 
 /*console.log(
-  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[8].card
-    .card.itemCards[0].card.info.name
-);*/
+    swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[8].card
+      .card.itemCards[0].card.info.name
+  );*/
+//2562
 console.log(
+  "2562-->",
   swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[8].card
-    .card.itemCards[0].card.info.name
+    .card.title
 );
+//840
+console.log(
+  "840-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card
+    .card.itemCards[5].card.info.ratings.aggregatedRating
+);
+//650
+console.log(
+  "650-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card
+    .card.itemCards[2].card.info.ratings.aggregatedRating.ratingCountV2
+);
+//3544
+console.log("3544-->", swiggyResponse.data.firstOffsetRequest);
+//10
+console.log("10-->", swiggyResponse.data.cards[0].card.card.text);
+//899
+console.log(
+  "899-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card
+    .card.itemCards[6].card.info.ribbon.bottomBackgroundColor
+);
+//1567
+console.log(
+  "1567-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card
+    .card.itemCards[18].card
+);
+//587
+console.log(
+  "587-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card
+    .card.itemCards[2].card.info
+);
+//2222
+console.log(
+  "2222-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[3].card
+    .card.itemCards[1].card.info.itemAttribute
+);
+//3333
+console.log(
+  "3333-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[7].card
+    .card.itemCards[0].card.info.badgesV2
+);
+//999
+console.log(
+  "999-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card
+    .card.itemCards[8].card.info.variants.variantGroups[0]
+);
+
+console.log(
+  "1111-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card
+    .card.itemCards[10].card
+);
+
+console.log(
+  "2500-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[3].card
+    .card.itemCards[6].card.info.category
+);
+
+console.log(
+  "1854-->",
+  swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card
+    .card.itemCards[2].card.info.variants.variantGroups[0].name
+);
+
+/*console.log(
+    "786-->",
+    swiggyResponse.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card
+      .card.itemCards[2].card.info.card.hideRestaurantDetails
+  );*/
